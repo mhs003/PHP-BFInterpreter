@@ -10,7 +10,7 @@
  * @author    Monzurul Hasan <monzurulhasan@gmail.com>
  * @copyright 2022 Ru-Hub
  * @version   v1.0
- * @link      https://github.com/mhs003/PHP-BFInterpreter
+ * @link      https://github.com/mhs003/PHP-BFInterpreter/blob/main/index.php
  * @since     File available since Release 1.0
  * 
  * ***************************************

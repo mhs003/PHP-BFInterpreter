@@ -333,7 +333,16 @@ class Interpreter
     public function getDataPointers(int $limit = 0): array
     {
         if ($limit == 0) {
-            return $this->buffer;
+            $return_array = $this->buffer;
+            while(count($return_array) > 0 && ($end = array_pop($return_array)) == 0);
+            array_push($return_array, $end);
+            if(count($return_array) > 0 && count($return_array) < $this->bufferPointer + 1) {
+                return $this->getDataPointers($this->bufferPointer);
+            }
+            if (count($return_array) > 0 && count($return_array) < 6) {
+                return $this->getDataPointers(5);
+            }
+            return $return_array;
         } else {
             $pointers = array();
             for ($i = 0; $i <= $limit; $i++) {

@@ -1,6 +1,6 @@
 # PHP-BFInterpreter
-***Brainfuck* interpreter written in php**  
-Interprete your *Brainfuck* codes easily with php
+***Brainf-ck* interpreter written in php**  
+Interprete your *Brainf-ck* codes easily with php
 
 ---
 
